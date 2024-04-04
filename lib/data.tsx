@@ -101,9 +101,9 @@ export const projectsData = [
   },
   {
     id: 2,
-    title: "Soc Services RailTel Corporation of India Ltd.",
+    title: "DOT LSA.",
     description:
-      "Railway and RailTel employee can request for Antivirus Installation, System Hardening, and Support regarding Antivirus. Also can get tools for SSL Reports geenrate, GoAccess Reports generate, Bulk IP/Hash Reputaion Check of teh websites which are not publicly available using Virus Total and Talos CISCO API. also it provides dashboard for all teh live data and many more.",
+      "used by Department of Telecommunication of India for viewing current status of all company list ISP, NLD, ILD by RailTel, RailTel Use this at the time of Audit as well as on daily basis to know any provided ip details",
     tags: [
       { id: 1, name: "React" },
       { id: 2, name: "Next.js" },
@@ -117,8 +117,8 @@ export const projectsData = [
       { id: 10, name: "CSS" },
       { id: 11, name: "HTML" },
     ],
-    imageUrl: "/soc-services.png",
-    webUrl: "https://soc-services.rcil.gov.in",
+    imageUrl: "/dot-lsa.png",
+    webUrl: "https://dotlsacomp.rcil.gov.in/",
   },
   {
     id: 3,
