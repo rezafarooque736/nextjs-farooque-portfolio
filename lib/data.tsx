@@ -29,7 +29,7 @@ export const links = [
 
 export const experiencesData = [
   {
-    id: 5,
+    id: 6,
     imageUrl: "/railtel.png",
     title: "Full Stack Developer",
     timeline: "Jan 16, 2022 - present",
@@ -39,7 +39,7 @@ export const experiencesData = [
       "I am an experienced full-stack developer proficient in a range of technologies including React, Next.js, tailwindcss, PostgreSQL, Python, and Flask, etc. With a background in both frontend and backend development, as well as database management and deployment, I am well-equipped to handle the entire development lifecycle from conception to maintenance. I am currently seeking full-time opportunities where I can leverage my skills and expertise to contribute to meaningful projects.",
   },
   {
-    id: 4,
+    id: 5,
     imageUrl: "/induce.png",
     title: "Internship in Induce",
     timeline: "Oct 11, 2021 - Jan 14,2022",
@@ -48,7 +48,7 @@ export const experiencesData = [
     description: "3 month internship in Induce as a web developer.",
   },
   {
-    id: 3,
+    id: 4,
     imageUrl: "/freelancer.png",
     title: "Freelancer",
     timeline: "2020 - 2021",
@@ -58,7 +58,7 @@ export const experiencesData = [
       "around 1 year as freelancer during corona time on freelancer, upwork, fiverr.",
   },
   {
-    id: 2,
+    id: 3,
     imageUrl: "/mdu_logo.png",
     title: "BTech in Computer Science & Engineerig",
     timeline: "2017 - 2020",
@@ -66,6 +66,16 @@ export const experiencesData = [
     location: "Maharshi Dayanand University, Rohtak, Haryana, India",
     description:
       "I graduated from Maharshi Dayanand University in BTech in Computer Science & Technology.",
+  },
+  {
+    id: 2,
+    imageUrl: "/aedifico_logo.png",
+    title: "Internship in Aedifico Tech Pvt. Ltd.",
+    timeline: "March 2017 - May 2017",
+    url: "http://aedificogroup.com/",
+    location: "Laxmi nagar, New Delhi, Delhi, India",
+    description:
+      "3 month internship in Aedifico Tech Pvt. Ltd. as a web developer.",
   },
   {
     id: 1,
