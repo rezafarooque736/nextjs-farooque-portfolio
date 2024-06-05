@@ -68,7 +68,7 @@ const Projects = () => {
                     height={265}
                     alt={item.title}
                     src={item.imageUrl}
-                    className="w-[392px] h-[265px] object-cover group-hover:scale-105 ease-in-out duration-200 group-hover:opacity-70 transition-transform"
+                    className="w-[392px] h-[265px] object-contain group-hover:scale-105 ease-in-out duration-200 group-hover:opacity-70 transition-transform"
                   />
                   <div className="absolute hidden inset-28 group-hover:flex group-hover:items-center group-hover:justify-center">
                     <Button

@@ -111,6 +111,59 @@ export const projectsData = [
   },
   {
     id: 2,
+    title: "Soc Services RailTel Corporation of India Ltd.",
+    description:
+      "Railway and RailTel employee can request for Antivirus Installation, System Hardening, and Support regarding Antivirus. Also can get tools for SSL Reports generate, GoAccess Reports generate, Bulk IP/Hash Reputation Check of the websites which are not publicly available using Virus Total and Talos CISCO API. also it provides dashboard for all the live data and many more.",
+    tags: [
+      { id: 1, name: "FLask" },
+      { id: 2, name: "Python" },
+      { id: 3, name: "Bootstrap" },
+      { id: 4, name: "PostgreSQL" },
+      { id: 5, name: "Nginx" },
+      { id: 6, name: "Ubuntu Server" },
+      { id: 6, name: "CSS" },
+      { id: 7, name: "HTML" },
+    ],
+    imageUrl: "/soc-services.png",
+    webUrl: "https://soc-services.rcil.gov.in",
+  },
+  {
+    id: 3,
+    title: "Server Farm GGNDC RailTel Corporation of India Ltd.",
+    description:
+      "Railtel Employee can get all the details of data center Racks",
+    tags: [
+      { id: 1, name: "FLask" },
+      { id: 2, name: "Python" },
+      { id: 3, name: "Bootstrap" },
+      { id: 4, name: "PostgreSQL" },
+      { id: 5, name: "Nginx" },
+      { id: 6, name: "Ubuntu Server" },
+      { id: 6, name: "CSS" },
+      { id: 7, name: "HTML" },
+    ],
+    imageUrl: "/ggndc-server-farm.png",
+    webUrl: "http://dcpm.rcil.gov.in/showAll-dc-infra",
+  },
+  {
+    id: 4,
+    title: "Dashboard SOC GGNDC-RailTel",
+    description: "Monitor differnt soc-services like arcsight, hpsm, etc.",
+    tags: [
+      { id: 1, name: "Node.js" },
+      { id: 2, name: "express.js" },
+      { id: 3, name: "Next.js" },
+      { id: 4, name: "mongoDB" },
+      { id: 5, name: "mongoose" },
+      { id: 6, name: "Tailwind CSS" },
+      { id: 6, name: "@tremor/react" },
+      { id: 7, name: "recharts" },
+    ],
+    imageUrl: "/dashboard-soc-arcsight.jpg",
+    webUrl: "",
+  },
+  {
+    id: 5,
     title: "DOT LSA.",
     description:
       "used by Department of Telecommunication of India for viewing current status of all company list ISP, NLD, ILD by RailTel, RailTel Use this at the time of Audit as well as on daily basis to know any provided IP details",
@@ -131,43 +184,7 @@ export const projectsData = [
     webUrl: "https://dotlsacomp.rcil.gov.in/",
   },
   {
-    id: 3,
-    title: "Soc Services RailTel Corporation of India Ltd.",
-    description:
-      "Railway and RailTel employee can request for Antivirus Installation, System Hardening, and Support regarding Antivirus. Also can get tools for SSL Reports generate, GoAccess Reports generate, Bulk IP/Hash Reputation Check of the websites which are not publicly available using Virus Total and Talos CISCO API. also it provides dashboard for all the live data and many more.",
-    tags: [
-      { id: 1, name: "FLask" },
-      { id: 2, name: "Python" },
-      { id: 3, name: "Bootstrap" },
-      { id: 4, name: "PostgreSQL" },
-      { id: 5, name: "Nginx" },
-      { id: 6, name: "Ubuntu Server" },
-      { id: 6, name: "CSS" },
-      { id: 7, name: "HTML" },
-    ],
-    imageUrl: "/soc-services.png",
-    webUrl: "https://soc-services.rcil.gov.in",
-  },
-  {
-    id: 4,
-    title: "Server Farm GGNDC RailTel Corporation of India Ltd.",
-    description:
-      "Railtel Employee can get all the details of data center Racks",
-    tags: [
-      { id: 1, name: "FLask" },
-      { id: 2, name: "Python" },
-      { id: 3, name: "Bootstrap" },
-      { id: 4, name: "PostgreSQL" },
-      { id: 5, name: "Nginx" },
-      { id: 6, name: "Ubuntu Server" },
-      { id: 6, name: "CSS" },
-      { id: 7, name: "HTML" },
-    ],
-    imageUrl: "/ggndc-server-farm.png",
-    webUrl: "http://dcpm.rcil.gov.in/showAll-dc-infra",
-  },
-  {
-    id: 5,
+    id: 6,
     title: "Data Center Patch Mangement GGNDC RailTel",
     description:
       "patch data center service at regular interval when any device change or upgraded.",
@@ -185,7 +202,7 @@ export const projectsData = [
     webUrl: "",
   },
   {
-    id: 6,
+    id: 7,
     title: "VPN Password Reset DFCCIL Government of India Ltd.",
     description:
       "VPN Password Reset Dedicated Freight Corridor Corporation of India.",
