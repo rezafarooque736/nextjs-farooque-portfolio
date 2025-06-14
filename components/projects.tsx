@@ -1,53 +1,53 @@
-"use client";
+'use client';
 
-import { useSectionInView } from "@/hooks";
-import SectionHeading from "./section-heading";
-import { projectsData } from "@/lib/data";
-import { useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { useSectionInView } from '@/hooks';
+import SectionHeading from './section-heading';
+import { projectsData } from '@/lib/data';
+import { useState } from 'react';
+import { AnimatePresence, motion } from 'framer-motion';
 import {
   Card,
   CardContent,
   CardDescription,
   CardHeader,
   CardTitle,
-} from "./ui/card";
-import Image from "next/image";
-import { Badge } from "./ui/badge";
-import { ProjectTagProps } from "@/types";
-import { Button } from "./ui/button";
-import { ChevronRightIcon } from "lucide-react";
-import Link from "next/link";
+} from './ui/card';
+import Image from 'next/image';
+import { Badge } from './ui/badge';
+import { ProjectTagProps } from '@/types';
+import { Button } from './ui/button';
+import { ChevronRightIcon } from 'lucide-react';
+import Link from 'next/link';
 
 const Projects = () => {
-  const { ref } = useSectionInView("Projects", 0.5);
+  const { ref } = useSectionInView('Projects', 0.5);
   let [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
     <section
       id="projects"
       ref={ref}
-      className="w-full px-4 mx-auto mt-20 text-center scroll-mt-28 max-sm:mb-28 sm:max-w-7xl sm:px-8"
+      className="mx-auto mt-20 w-full scroll-mt-28 px-4 text-center max-sm:mb-28 sm:max-w-7xl sm:px-8"
     >
       <SectionHeading>My Projects / Works</SectionHeading>
-      <p className="text-lg text-slate-500 text-wrap">
+      <p className="text-lg text-wrap text-slate-500">
         Here you will find some of the Company projects that I have created.
       </p>
       <div className="w-full">
-        <div className="grid grid-cols-1 gap-5 my-10 md:grid-cols-2 lg:grid-cols-3">
+        <div className="my-10 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
           {projectsData.map((item, idx) => (
             <Link
               key={item?.id}
               href={item?.webUrl}
               target="blank"
-              className="relative block w-full h-full group"
+              className="group relative block h-full w-full"
               onMouseEnter={() => setHoveredIndex(idx)}
               onMouseLeave={() => setHoveredIndex(null)}
             >
               <AnimatePresence>
                 {hoveredIndex === idx && (
                   <motion.span
-                    className="absolute inset-0 h-full w-full bg-neutral-200 dark:bg-slate-800/[0.8] block  rounded-2xl"
+                    className="absolute inset-0 block h-full w-full rounded-2xl bg-neutral-200 dark:bg-slate-800/[0.8]"
                     layoutId="hoverBackground"
                     initial={{ opacity: 0 }}
                     animate={{
@@ -61,33 +61,33 @@ const Projects = () => {
                   />
                 )}
               </AnimatePresence>
-              <Card className="rounded-xl h-auto w-full p-0 overflow-hidden bg-black border border-transparent dark:border-white/[0.2] group-hover:border-slate-700 relative z-20">
+              <Card className="relative z-20 h-auto w-full overflow-hidden rounded-xl border border-transparent bg-black p-0 group-hover:border-slate-700 dark:border-white/[0.2]">
                 <CardHeader className="relative p-0">
                   <Image
                     width={392}
                     height={265}
                     alt={item.title}
                     src={item.imageUrl}
-                    className="w-[392px] h-[265px] object-contain group-hover:scale-105 ease-in-out duration-200 group-hover:opacity-70 transition-transform"
+                    className="h-[265px] w-[392px] object-contain transition-transform duration-200 ease-in-out group-hover:scale-105 group-hover:opacity-70"
                   />
-                  <div className="absolute hidden inset-28 group-hover:flex group-hover:items-center group-hover:justify-center">
+                  <div className="absolute inset-28 hidden group-hover:flex group-hover:items-center group-hover:justify-center">
                     <Button
                       variant="outline"
-                      className="items-center rounded-3xl ring-2 ring-sky-700 bg-slate-200 hover:bg-slate-50"
+                      className="items-center rounded-3xl bg-slate-200 ring-2 ring-sky-700 hover:bg-slate-50"
                     >
-                      Visit Website{" "}
+                      Visit Website{' '}
                       <span>
                         <ChevronRightIcon />
                       </span>
                     </Button>
                   </div>
                 </CardHeader>
-                <CardContent className="p-1 my-2">
+                <CardContent className="my-2 p-1">
                   <CardTags tags={item.tags} />
-                  <CardTitle className="px-2 my-3 text-xl font-medium text-left text-zinc-100 line-clamp-1">
+                  <CardTitle className="my-3 line-clamp-1 px-2 text-left text-xl font-medium text-zinc-100">
                     {item.title}
                   </CardTitle>
-                  <CardDescription className="px-2 mb-1 text-sm text-left text-zinc-400 line-clamp-2">
+                  <CardDescription className="mb-1 line-clamp-2 px-2 text-left text-sm text-zinc-400">
                     {item.description}
                   </CardDescription>
                 </CardContent>
@@ -105,10 +105,8 @@ export default Projects;
 
 const CardTags = ({ tags }: { tags: ProjectTagProps }) => {
   return (
-    <div className="relative flex justify-start gap-1 mx-1 overflow-x-auto flex-nowrap">
-      {tags?.map((item) => (
-        <Badge key={item.id}>{item.name}</Badge>
-      ))}
+    <div className="relative mx-1 flex flex-nowrap justify-start gap-1 overflow-x-auto">
+      {tags?.map((item) => <Badge key={item.id}>{item.name}</Badge>)}
     </div>
   );
 };

@@ -1,9 +1,9 @@
-import Contact from "@/components/contact";
-import Experience from "@/components/experience";
-import Skills from "@/components/skills";
-import Intro from "@/components/intro";
-import Projects from "@/components/projects";
-import SectionDivider from "@/components/section-divider";
+import Contact from '@/components/contact';
+import Experience from '@/components/experience';
+import Skills from '@/components/skills';
+import Intro from '@/components/intro';
+import Projects from '@/components/projects';
+import SectionDivider from '@/components/section-divider';
 
 export default function Home() {
   return (
