@@ -35,19 +35,6 @@ const Intro = () => {
               className="h-36 w-36 rounded-full border-[0.35rem] border-white object-cover shadow-xl"
             />
           </motion.div>
-          <motion.span
-            className="absolute right-0 bottom-0 cursor-context-menu text-3xl"
-            initial={{ opacity: 0, scale: 0 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{
-              type: 'spring',
-              stiffness: 125,
-              delay: 0.1,
-              duration: 0.7,
-            }}
-          >
-            👋
-          </motion.span>
         </div>
       </div>
 
